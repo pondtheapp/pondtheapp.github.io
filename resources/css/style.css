@@ -4,10 +4,11 @@
   padding-bottom: 2px;
   text-align: center;
   font-size: 100px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 #logo {
+  opacity: 0.5;
   /*padding-top: 50px;*/
   padding-bottom: 0px;
   float: left;
@@ -36,4 +37,5 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
+  padding-bottom: 70px;
 }
