@@ -1,12 +1,17 @@
 #name {
   font-weight: lighter;
   letter-spacing: 17px;
-  padding-top: 50px;
   padding-bottom: 2px;
   text-align: center;
   font-size: 100px;
+  padding-top: 50px;
 }
 
+#logo {
+  /*padding-top: 50px;*/
+  padding-bottom: 0px;
+  float: left;
+}
 
 #description {
   letter-spacing: 3px;
@@ -31,8 +36,4 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-}
-
-a:hover {
-    background: url('resources/images/changebutton.png');
 }
