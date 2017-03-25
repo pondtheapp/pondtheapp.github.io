@@ -23,6 +23,10 @@
           <label for="time">Maximum Time to Finish</label>
           <input type="text" class="form-control" id="time" placeholder="Enter Maximum Time to Finish">
         </div>
+        <div class="form-group">
+          <label for="due">Due Date</label>
+          <input type="text" class="form-control" id="due" placeholder="Enter Due Date">
+        </div>
         <button type="submit" class="btn btn-primary" onclick="javascript: asubmit();">Submit</button>
         <!--  style="background-color: lightblue; border: none; border-radius: 10px;" -->
       </form>
@@ -48,11 +52,13 @@
           var course = document.getElementById("course").value;
           var assignment = document.getElementById("assignment").value;
           var time = document.getElementById("time").value;
+          var due = document.getElementById("due").value;
 
           firebase.database().ref('assignments/' + course + "-" + assignment).set({
             course: course,
             assignment: assignment,
             time: time
+            due: due
           });
           alert("submitted")
           return false;
