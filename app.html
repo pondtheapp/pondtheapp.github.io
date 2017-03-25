@@ -57,7 +57,7 @@
           firebase.database().ref('assignments/' + course + "-" + assignment).set({
             course: course,
             assignment: assignment,
-            time: time
+            time: time,
             due: due
           });
           alert("submitted")
