@@ -49,7 +49,7 @@
           var assignment = document.getElementById("assignment").value;
           var time = document.getElementById("time").value;
 
-          firebase.database().ref('assignments/' + course).set({
+          firebase.database().ref('assignments/' + course + "-" + assignment).set({
             course: course,
             assignment: assignment,
             time: time
