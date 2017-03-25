@@ -13,7 +13,7 @@
   text-align: center;
   font-family: 'Roboto';
   color: white;
-  text
+  padding-bottom: 20px;
 }
 
 #intro {
@@ -31,11 +31,4 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-  font-family: 'Roboto';
-  color: white;
 }
