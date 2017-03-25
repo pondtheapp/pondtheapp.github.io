@@ -23,7 +23,7 @@
           <label for="time">Maximum Time to Finish</label>
           <input type="text" class="form-control" id="time" placeholder="Enter Maximum Time to Finish">
         </div>
-        <button type="submit" class="btn btn-primary" onclick="javascript: submit();">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="javascript: asubmit();">Submit</button>
         <!--  style="background-color: lightblue; border: none; border-radius: 10px;" -->
       </form>
       <script>
@@ -44,7 +44,7 @@
           console.log(errorCode + ": " + error.message);
         });
 
-        function submit() {
+        function asubmit() {
           var course = document.getElementById("course").value;
           var assignment = document.getElementById("assignment").value;
           var time = document.getElementById("time").value;
