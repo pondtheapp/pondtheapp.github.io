@@ -1,0 +1,27 @@
+p {
+  text-size: 20px;
+  font-family: 'Roboto';
+  color: white;
+}
+
+body {
+  padding-left: 80px;
+  opacity: 1;
+  background-image: url("../images/rain.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  padding-bottom: 50px;
+}
+
+h1 {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#id {
+  padding-top: 60px;
+  text-align: center;
+}
