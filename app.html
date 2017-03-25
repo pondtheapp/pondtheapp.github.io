@@ -15,12 +15,19 @@
       };
       firebase.initializeApp(config);
 
+      firebase.auth().signInAnonymously().catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log(errorCode + ": " + error.message);
+      });
+
       function submit() {
         var name = document.getElementById("name");
         var assignment = document.getElementById("assignment");
         var time = document.getElementById("time");
 
-        firebase.database().ref('courses/' + name).set({
+        firebase.database().ref('courses').set({
           name: name,
           assignment: title,
           time : time
@@ -29,7 +36,7 @@
     </script>
   </head>
   <body>
-    <form onsubmit="return submit();">
+    <form onsubmit="return false; submit()">
       Course Name:<br>
       <input type="text" id="name" value="">
       <br>
