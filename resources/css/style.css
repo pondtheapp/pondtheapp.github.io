@@ -1,0 +1,41 @@
+#name {
+  font-weight: lighter;
+  letter-spacing: 17px;
+  padding-top: 50px;
+  padding-bottom: 2px;
+  text-align: center;
+  font-size: 100px;
+}
+
+
+#description {
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Roboto';
+  color: white;
+  text
+}
+
+#intro {
+  border-radius: 10px;
+  z-index: 1;
+  opacity: 1;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  opacity: 1;
+  background-image: url("../images/rain.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  font-family: 'Roboto';
+  color: white;
+}

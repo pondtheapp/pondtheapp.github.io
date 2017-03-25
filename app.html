@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCHmPyWj2TYzDeolBwdU_KssLVz7hxof6o",
+        authDomain: "pond-57e0a.firebaseapp.com",
+        databaseURL: "https://pond-57e0a.firebaseio.com",
+        storageBucket: "pond-57e0a.appspot.com",
+        messagingSenderId: "380706228250"
+      };
+      firebase.initializeApp(config);
+
+      function submit() {
+        var name = document.getElementById("name");
+        var assignment = document.getElementById("assignment");
+        var time = document.getElementById("time");
+
+        firebase.database().ref('courses/' + name).set({
+          name: name,
+          assignment: title,
+          time : time
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return submit();">
+      Course Name:<br>
+      <input type="text" id="name" value="">
+      <br>
+      Assignment Title:<br>
+      <input type="text" id="title" value="">
+      <br>
+      Maximum Time to Finish:<br>
+      <input type="text" id="time" value="">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
