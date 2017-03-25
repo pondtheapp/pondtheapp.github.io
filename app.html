@@ -23,9 +23,9 @@
       });
 
       function submit() {
-        var name = document.getElementById("name");
-        var assignment = document.getElementById("assignment");
-        var time = document.getElementById("time");
+        var name = document.getElementById("name").value;
+        var assignment = document.getElementById("assignment").value;
+        var time = document.getElementById("time").value;
 
         firebase.database().ref('courses').set({
           name: name,
