@@ -3,50 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyCHmPyWj2TYzDeolBwdU_KssLVz7hxof6o",
-        authDomain: "pond-57e0a.firebaseapp.com",
-        databaseURL: "https://pond-57e0a.firebaseio.com",
-        storageBucket: "pond-57e0a.appspot.com",
-        messagingSenderId: "380706228250"
-      };
-      firebase.initializeApp(config);
-
-      firebase.auth().signInAnonymously().catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorCode + ": " + error.message);
-      });
-
-      function submit() {
-        var name = document.getElementById("name").value;
-        var assignment = document.getElementById("assignment").value;
-        var time = document.getElementById("time").value;
-
-        firebase.database().ref('courses').set({
-          name: name,
-          assignment: assignment,
-          time: time
-        });
-      }
-    </script>
   </head>
   <body>
-    <form onsubmit="return false; submit()">
-      Course Name:<br>
-      <input type="text" id="name" value="">
+    <div class="container">
       <br>
-      Assignment Title:<br>
-      <input type="text" id="title" value="">
-      <br>
-      Maximum Time to Finish:<br>
-      <input type="text" id="time" value="">
-      <br><br>
-      <input type="submit" value="Submit">
-    </form>
+      <h1>Add Assignment</h1>
+      <form role="form" method="get" action="" onsubmit="javascript: return false;">
+        <div class="form-group">
+          <label for="course">Course Name</label>
+          <input type="text" class="form-control" id="course" placeholder="Enter Course Name">
+        </div>
+        <div class="form-group">
+          <label for="assignment">Assignment Title</label>
+          <input type="text" class="form-control" id="assignment" placeholder="Enter Assignment Title">
+        </div>
+        <div class="form-group">
+          <label for="time">Maximum Time to Finish</label>
+          <input type="text" class="form-control" id="time" placeholder="Enter Maximum Time to Finish">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="javascript: submit();">Submit</button>
+        <!--  style="background-color: lightblue; border: none; border-radius: 10px;" -->
+      </form>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCHmPyWj2TYzDeolBwdU_KssLVz7hxof6o",
+          authDomain: "pond-57e0a.firebaseapp.com",
+          databaseURL: "https://pond-57e0a.firebaseio.com",
+          storageBucket: "pond-57e0a.appspot.com",
+          messagingSenderId: "380706228250"
+        };
+        firebase.initializeApp(config);
+
+        firebase.auth().signInAnonymously().catch(function(error) {
+          // Handle Errors here.
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          console.log(errorCode + ": " + error.message);
+        });
+
+        function submit() {
+          var course = document.getElementById("course").value;
+          var assignment = document.getElementById("assignment").value;
+          var time = document.getElementById("time").value;
+
+          firebase.database().ref('assignments/' + course).set({
+            course: course,
+            assignment: assignment,
+            time: time
+          });
+          return false;
+        }
+      </script>
+    </div>
   </body>
 </html>
