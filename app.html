@@ -10,7 +10,7 @@
     <div class="container">
       <br>
       <h1>Add Assignment</h1>
-      <form role="form" method="get" action="" onsubmit="javascript: alert('submitted');">
+      <form role="form" method="get" action="" onsubmit="javascript: return false;">
         <div class="form-group">
           <label for="course">Course Name</label>
           <input type="text" class="form-control" id="course" placeholder="Enter Course Name">
@@ -54,6 +54,7 @@
             assignment: assignment,
             time: time
           });
+          alert("submitted")
           return false;
         }
       </script>
