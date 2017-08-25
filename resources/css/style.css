@@ -1,10 +1,11 @@
 html {
   font-family: 'Roboto Condensed', sans-serif;
+  color: black;
 }
 
 body {
   opacity: 1;
-  background-color: #739094;
+  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,28 +14,23 @@ body {
 }
 
 #name {
-  font-family: 'Roboto', sans-serif;
+  padding-left: 5%;
+  float:left;
+  font-family: 'Amiko', sans-serif;
+  color: black;
   font-weight: lighter;
-  letter-spacing: 17px;
-  text-align: center;
-  font-size: 100px;
-  padding-top: 100px;
-}
-
-#description {
   letter-spacing: 3px;
   text-align: center;
-  font-family: 'Roboto';
-  color: white;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding-top: 10px;
 }
+
 
 #intro {
   background-image: url("resources/images/pond.gif");
   border-radius: 10px;
   z-index: 5;
   opacity: 1;
-  color: white;
   font-family: 'Roboto', sans-serif;
 }
 
