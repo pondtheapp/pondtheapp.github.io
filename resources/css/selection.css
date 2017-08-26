@@ -1,0 +1,87 @@
+html {
+  font-family: 'Amiko', sans-serif;
+  color: black;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  bottom:0;
+}
+
+body {
+  background-color: white;
+}
+
+#name {
+  display: block;
+  padding-left: 5%;
+  float:left;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+#selection {
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  font-size: 40px;
+
+}
+
+#i_am {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+  padding-top: 15%;
+}
+.form-group {
+  padding-top: 20%;
+}
+
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5296bd), color-stop(1, #5296bd) );
+	background:-moz-linear-gradient( center top, #5296bd 5%, #5296bd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5296bd', endColorstr='#5296bd');
+	background-color:#5296bd;
+	-webkit-border-top-left-radius:11px;
+	-moz-border-radius-topleft:11px;
+	border-top-left-radius:11px;
+	-webkit-border-top-right-radius:11px;
+	-moz-border-radius-topright:11px;
+	border-top-right-radius:11px;
+	-webkit-border-bottom-right-radius:11px;
+	-moz-border-radius-bottomright:11px;
+	border-bottom-right-radius:11px;
+	-webkit-border-bottom-left-radius:11px;
+	-moz-border-radius-bottomleft:11px;
+	border-bottom-left-radius:11px;
+text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:28px;
+	font-weight:normal;
+	font-style:normal;
+height:70px;
+	line-height:70px;
+width:179px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:-50px -50px 0px #ffffff;
+}.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5296bd), color-stop(1, #5296bd) );
+	background:-moz-linear-gradient( center top, #5296bd 5%, #5296bd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5296bd', endColorstr='#5296bd');
+	background-color:#5296bd;
+}.classname:active {
+	position:relative;
+	top:1px;
