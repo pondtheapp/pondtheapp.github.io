@@ -11,3 +11,42 @@ html {
 body {
   background-color: white;
 }
+
+.classname {
+ background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #549fbf), color-stop(1, #549fbf) );
+ background:-moz-linear-gradient( center top, #549fbf 5%, #549fbf 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#549fbf', endColorstr='#549fbf');
+ background-color:#549fbf;
+ -webkit-border-top-left-radius:5px;
+ -moz-border-radius-topleft:5px;
+ border-top-left-radius:5px;
+ -webkit-border-top-right-radius:5px;
+ -moz-border-radius-topright:5px;
+ border-top-right-radius:5px;
+ -webkit-border-bottom-right-radius:5px;
+ -moz-border-radius-bottomright:5px;
+ border-bottom-right-radius:5px;
+ -webkit-border-bottom-left-radius:5px;
+ -moz-border-radius-bottomleft:5px;
+ border-bottom-left-radius:5px;
+text-indent:0px;
+ display:inline-block;
+ color:#ffffff;
+ font-family:Verdana;
+ font-size:13px;
+ font-weight:normal;
+ font-style:normal;
+height:19px;
+ line-height:19px;
+width:57px;
+ text-decoration:none;
+ text-align:center;
+}.classname:hover {
+ background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #549fbf), color-stop(1, #549fbf) );
+ background:-moz-linear-gradient( center top, #549fbf 5%, #549fbf 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#549fbf', endColorstr='#549fbf');
+ background-color:#549fbf;
+}.classname:active {
+ position:relative;
+ top:1px;
+}
